@@ -1,0 +1,27 @@
+﻿TODO:
+check if todos are up to date or if some are already done
+make a better ui tbh
+ -> avoidance editor crashes if you try to open a video after closing the editor with a video previously loaded (dll probably gets deinitialized? it straight up segfaults, no exception at all)
+ -> Make sure you can always open the icon editor, even if there's no icon to click on currently loaded
+add a copy button to copy layouts
+display current attack name somewhere, update as video plays
+make selecting the attack work with one click, jumping to its end with double click (but make it work better than it does now, shouldn't select it when double clicking?)
+add support for different StartTrigger options (e.g. GameRestart)
+add feedback when saving the layout file -> warning before closing without saving the boss
+make "New Boss" button work
+add Shift command (shift all attacks by X frames)
+figure out how to make the inherited XML nodes serialize last instead of first
+investigate crash on clicking X to remove an attack (Might be related to an empty time string it tried to convert?)
+add death detector editor (detect type="file"?) autodetect which bytes change and add offsets for it?
+add address editor (implement CE(-like) functionality?)
+add mouseover for video player ui elements (attack keystones (attack name, timings), play/pause button, frame-advance button etc)
+add support for grouping attacks
+add shortcut to jump to beginning of attack instead of Alt+Enter jumping to the end
+
+add editor for bosses that aren't avoidace-based?
+
+Done:
+(v) Add Alt+Left/Right to move to next/previous attack
+(v) Keyboard shortcut to move to selected attack -> Alt+Enter
+(v) When creating new attacks, automatically select the textbox for it's name
+(v) Icon editor doesn't seem to work and also crashes when reopening it
